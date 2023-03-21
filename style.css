@@ -1,0 +1,191 @@
+
+* {
+    box-sizing: content-box;
+  }
+  /* Body Style */
+  body {
+    font-family: "Quicksand";
+    background-color: #d8d8d8;
+    color: #2E0249;
+    text-align: center;
+    padding: 25px;
+    font-size: 25px
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    height: 200px;
+    width: 200px;
+    display: block;
+    border-radius: 50%;
+    margin-left: 475px;
+    margin-right: 0px;
+    margin-top: 0px;
+    border-radius: 10px;
+    border-radius: 30px;
+    box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  }
+
+  .header h2 {
+    text-align: center;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* Profile Box */
+  .card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 700px;
+    height: 100px;
+    margin: 20px auto;
+    border-radius: 30px;
+    box-shadow: 0 0 16px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  /* Profile Text */
+  .profile{
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: -15px;
+  }
+  /* Profile Text - H2 */
+  #profileCard{
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-top: -15px;
+
+  }
+  /* Profile IMG */
+  #profile-pic {
+    width: 250px;
+    height: 250px;
+    display: block;
+    border-radius: 10%;
+    margin-left: -25px;
+    margin-right: 0px;
+    margin-top: -25px;
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    height: 100px;
+    margin: 75px auto;
+    border-radius: 30px;
+    box-shadow: 0 0 16px rgba(0,0,0,0.1);
+   
+  }
+
+  #footText h4 {
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+
+  a {
+    font-size: medium;
+    text-decoration: none;
+    background-color: #BA6E6E;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  }
+  
+  a{
+    transition: 0.3s ease;
+  }
+  
+  a:hover{
+    background-color: #964A4A;
+  }
+
+  /* .buttomFollow{
+    font-size: medium;
+    position: fixed;
+    display: block;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 22px;
+  } */
+
+  /* Columns Styles */
+.left,
+.middle,
+.right {
+  float: left;
+  width: 33%;
+  padding: 5px;
+  height: 200px; /* Should be removed. Only for demonstration */
+  width: 300px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: -40px auto;
+}
+
+  /* Style the left column */
+.left {
+  background-color:rgb(243, 240, 240) ;
+  grid-area: left;
+  margin-left: 0px;
+  border-radius: 30px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+}
+
+  /* Style the middle column */
+.middle {
+  background-color:rgb(243, 240, 240);
+  grid-area: middle;
+  margin-left: 0px;
+  border-radius: 30px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+}
+
+  /* Style the right column */
+.right {
+  background-color:rgb(243, 240, 240);
+  grid-area: right;
+  margin-left: 0px;
+  border-radius: 30px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+}
+
+  /* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left left middle middle right right' 
+    'footer footer footer footer footer footer';
+  grid-column-gap: 140px; 
+} 
+  
+  /* Responsive layout */
+  @media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'header header header header header header' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'footer footer footer footer footer footer';
+    }
+  }
